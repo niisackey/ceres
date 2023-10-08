@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/cart.css"
+    )}}">
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <section class="sizes">
+      <h1>Featured Sizes</h1>
+      
+      <div class="sizesrow">
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
+              >
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section>
+      </div>
+    </section>
+
+    <section class="flavours">
+      <h1>Flavours</h1>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Cocktail</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup1"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img2.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Pinegin bliss</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup2"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Citrus Wave</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup3"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>TropiFusion</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup4"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>WaterPine Delight</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup5"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Crimson Carrot Burst</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup6"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Banapple Burst</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup7"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Beetro-Pine</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup8"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+
+      <div class="flavoursrow">
+        <div class="flavor">
+          <div class="pic">
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+          <div class="content">
+            <h3>Tropical Nutwave</h3>
+            <p>The Best Flavour Yet</p>
+            <h3>GHC 200</h3>
+          </div>
+          <div class="outliner">
+            <button class="openPopup" data-target="popup9"> <i
+             id="icon"
+             class="fas fa-plus fa-1.6x"
+             style="color: black"
+           ></i></button>
+           </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Cart Button -->
+    <section id="cart" style="display: none">
+      <h1>Shopping Cart</h1>
+      <ul id="cartItems"></ul>
+      <div id="cartTotal">Total: GHC 0.00</div>
+      <br />
+      <div class="notes">
+        <label for="customerNotes">Customer Notes:</label>
+        <textarea
+          id="customerNotes"
+          rows="4"
+          cols="50"
+          placeholder="Enter any special instructions and Address for delivery"
+        ></textarea>
+      </div>
+
+      <button id="checkoutButton" onclick="checkout()">Checkout</button>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <div class="header">
+          <div class="star"></div>
+          <div class="headtext">
+            <h2>Cocktail</h2>
+
+            <h2>GHC 6</h2>
+            <span>
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+            </span>
+          </div>
+
+          <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+          class="starbucks">
+        </div>
+
+        <div class="overlay">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            alias modi eos recusandae rem delectus sed similique repudiandae
+            a,<br />
+            id facilis ipsam numquam, quos, in atque fuga error <br />
+            earum illum.
+          </p>
+          <br />
+          <div class="ing">
+            <!-- <div class="outline">
+                        <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                        <p>Hello</p>
+                    </div> -->
+            <div class="outline">
+              <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              <p>In 3 cute sizes</p>
+            </div>
+            <div class="outline">
+              <i
+                id="icon"
+                class="fas fa-snowflake fa-1x"
+                style="color: black"
+              ></i>
+              <p>Keep Frozen</p>
+            </div>
+            <div class="outline">
+              <i
+                id="icon"
+                class="fas fa-calendar fa-1x"
+                style="color: black"
+              ></i>
+              <p>Within 3 days</p>
+            </div>
+          </div>
+          <br />
+          <select id="size1">
+            <option value="Cocktail Small" data-price="7">
+              Small - GHC 7
+            </option>
+            <option value=" Cocktail Medium" data-price="10">
+              Medium - GHC 10
+            </option>
+            <option value="Cocktail Large" data-price="12">
+              Large - GHC 12
+            </option></select
+          ><br />
+          <input type="number" id="quantity1" min="1" value="1" />
+          <!-- Quantity input -->
+          <button onclick="addToCart(1, 'size1', 'quantity1')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>PineGin Bliss</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img2.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay1"><br>
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size2">
+                <option value="Pinegin Small" data-price="7">Small - GHC 7</option>
+                <option value=" Pinegin Medium" data-price="10">Medium - GHC 10</option>
+                <option value=" Pinegin Large" data-price="12">Large - GHC 12</option>
+              </select><br>
+              <input type="number" id="quantity2" min="1" value="1" />
+              <!-- Quantity input -->
+              <button onclick="addToCart(2, 'size2', 'quantity2')">
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup3" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>Citrus Wave</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size3">
+              <option value="CitrusWave Small" data-price="7">
+                Small - GHC 7
+              </option>
+              <option value=" CitrusWave Medium" data-price="10">
+                Medium - GHC 10
+              </option>
+              <option value="Cocktail Large" data-price="12">
+                Large - GHC 12
+              </option></select
+            ><br />
+            <input type="number" id="quantity3" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(3, 'size3', 'quantity3')">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup4" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>TropiFusion</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size4">
+              <option value="Tropifusion mall" data-price="7">
+                Small - GHC 7
+              </option>
+              <option value=" Tropifusion Medium" data-price="10">
+                Medium - GHC 10
+              </option>
+              <option value="TropifusionLarge" data-price="12">
+                Large - GHC 12
+              </option></select
+            ><br />
+            <input type="number" id="quantity4" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(4, 'size4', 'quantity4')">
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup5" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h3>WaterPine Delight</h3>
+  
+              <h3>GHC 6</h3>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: gold"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: gold"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: gold"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: gold"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: gold"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size5">
+              <option value="WaterPine Small" data-price="7">
+                Small - GHC 7
+              </option>
+              <option value=" WaterPine Medium" data-price="10">
+                Medium - GHC 10
+              </option>
+              <option value="WaterPine Large" data-price="12">
+                Large - GHC 12
+              </option></select
+            ><br />
+            <input type="number" id="quantity5" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(5, 'size5', 'quantity5')">
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup6" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>Crimson Carrot<br>Burst</h2>
+  
+              <h2>GHC 20</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size6">
+              <option value="CrimsonCarrot Small" data-price="10">
+                Small - GHC 10
+              </option>
+              <option value=" Cocktail Medium" data-price="12">
+                Medium - GHC 12
+              </option>
+              <option value="Cocktail Large" data-price="15">
+                Large - GHC 15
+              </option></select
+            ><br />
+            <input type="number" id="quantity6" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(6, 'size6', 'quantity6')">
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup7" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>Banapple Burst</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size7">
+              <option value="banapple Small" data-price="7">
+                Small - GHC 7
+              </option>
+              <option value=" banapple Medium" data-price="10">
+                Medium - GHC 10
+              </option>
+              <option value="banapple Large" data-price="12">
+                Large - GHC 12
+              </option></select
+            ><br />
+            <input type="number" id="quantity7" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(7, 'size7', 'quantity7')">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup8" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>Beetro-Pine</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size8">
+              <option value="beetropine small" data-price="10">
+                Small - GHC 10
+              </option>
+              <option value="beetropine Medium" data-price="20">
+                Medium - GHC 12
+              </option>
+              <option value="beetropine Large" data-price="30">
+                Large - GHC 15
+              </option></select
+            ><br />
+            <input type="number" id="quantity8" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(8, 'size8', 'quantity8')">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="popup9" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="header">
+            <div class="star"></div>
+            <div class="headtext">
+              <h2>Tropical Nutwave</h2>
+  
+              <h2>GHC 6</h2>
+              <span>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+              </span>
+            </div>
+  
+            <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+            class="starbucks">
+          </div>
+  
+          <div class="overlay">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              alias modi eos recusandae rem delectus sed similique repudiandae
+              a,<br />
+              id facilis ipsam numquam, quos, in atque fuga error <br />
+              earum illum.
+            </p>
+            <br />
+            <div class="ing">
+              <!-- <div class="outline">
+                          <img src={{ url_for("static", filename="images/img1.png" )}} alt="" class="starbucks">
+                          <p>Hello</p>
+                      </div> -->
+              <div class="outline">
+                <i id="icon" class="fas fa-star fa-1x" style="color: black"></i>
+                <p>In 3 cute sizes</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-snowflake fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Keep Frozen</p>
+              </div>
+              <div class="outline">
+                <i
+                  id="icon"
+                  class="fas fa-calendar fa-1x"
+                  style="color: black"
+                ></i>
+                <p>Within 3 days</p>
+              </div>
+            </div>
+            <br />
+            <select id="size9">
+              <option value="Nutwave Small" data-price="10">
+                Small - GHC 10
+              </option>
+              <option value="Nutwave Medium" data-price="12">
+                Medium - GHC 12
+              </option>
+              <option value="Nutwave Large" data-price="15">
+                Large - GHC 15
+              </option></select
+            ><br />
+            <input type="number" id="quantity9" min="1" value="1" />
+            <!-- Quantity input -->
+            <button onclick="addToCart(9, 'size9', 'quantity9')">
+                Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- <footer>
+    <div class="footerlinks">
+        <a href="{{url_for('home')}}"><img src={{ url_for("static", filename="images/home.png" )}} alt=""></a>
+        <a href="{{url_for('products_list')}}"><img src={{ url_for("static", filename="images/products.png" )}} alt=""></a>
+        
+        <div class="shopcart">
+            <img id="cartButton" src="{{ url_for("static", filename="images/cart.png" )}}" alt="Cart" onclick="toggleCart()">
+            <span id="cartItemCount">0</span>
+        </div>
+
+        <a href="{{url_for('order')}}"><img src={{ url_for("static", filename="images/more.png" )}} alt=""></a>
+    </div>
+</footer> -->
+
+
+
+    <footer>
+      <div class="footerlinks">
+        <a href="{{url_for('home')}}">
+          <i id="icon" class="fa-solid fa-house fa-2x" style="color: black"></i>
+        </a>
+        <a href="{{url_for('products_list')}}">
+          <i
+            id="icon"
+            class="fa-solid fa-wine-bottle fa-2x"
+            style="color: green"
+          ></i>
+        </a>
+
+        <div class="shopcart">
+          <a href="#cart"><img id="cartButton" src="{{ url_for("static", filename="images/cart.png" )}}" alt="Cart" onclick="toggleCart()"></a>
+          <span id="cartItemCount">0</span>
+        </div>
+        <a href="{{url_for('more')}}">
+          <i
+            id="icon"
+            class="fa-solid fa-ellipsis fa-2x"
+            style="color: black"
+          ></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const cart = {}; // Cart data structure (in-memory)
+
+      function addToCart(productId, sizeId, quantityId) {
+        const sizeSelect = document.getElementById(sizeId);
+        const selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
+        const size = selectedSize.value;
+        const price = parseFloat(selectedSize.getAttribute("data-price"));
+
+        const quantityInput = document.getElementById(quantityId);
+        const quantity = parseInt(quantityInput.value, 10);
+
+        if (!cart[productId]) {
+          cart[productId] = [];
+        }
+
+        const existingItem = cart[productId].find((item) => item.size === size);
+        if (existingItem) {
+          existingItem.quantity += quantity;
+        } else {
+          cart[productId].push({ size, price, quantity });
+        }
+
+        updateCartDisplay();
+      }
+      function removeFromCart(productId, size) {
+        if (cart[productId]) {
+          const itemIndex = cart[productId].findIndex(
+            (item) => item.size === size
+          );
+          if (itemIndex !== -1) {
+            const item = cart[productId][itemIndex];
+            if (item.quantity === 1) {
+              cart[productId].splice(itemIndex, 1);
+            } else {
+              item.quantity -= 1;
+            }
+          }
+        }
+
+        updateCartDisplay();
+      }
+
+      function updateCartDisplay() {
+        const cartList = document.getElementById("cartItems");
+        cartList.innerHTML = "";
+
+        let totalAmount = 0;
+
+        for (const productId in cart) {
+          cart[productId].forEach((product) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${
+              product.size
+            } - GHC ${product.price.toFixed(2)} x${product.quantity} = GHC ${(
+              product.price * product.quantity
+            ).toFixed(2)}`;
+
+            const plusButton = document.createElement("button");
+            plusButton.textContent = "+";
+            plusButton.onclick = () => addToCart(productId, product.size);
+
+            const minusButton = document.createElement("button");
+            minusButton.textContent = "-";
+            minusButton.onclick = () => removeFromCart(productId, product.size);
+
+            listItem.appendChild(plusButton);
+            listItem.appendChild(minusButton);
+            cartList.appendChild(listItem);
+
+            totalAmount += product.price * product.quantity;
+          });
+        }
+
+        const cartSection = document.getElementById("cart");
+        cartSection.style.display =
+          Object.keys(cart).length > 0 ? "block" : "none";
+
+        const cartItemCount = document.getElementById("cartItemCount");
+        const totalItems = Object.values(cart).reduce(
+          (total, items) =>
+            total +
+            items.reduce((itemTotal, item) => itemTotal + item.quantity, 0),
+          0
+        );
+        cartItemCount.textContent = totalItems.toString();
+
+        const cartTotal = document.getElementById("cartTotal");
+        cartTotal.textContent = `Total: GHC ${totalAmount.toFixed(2)}`;
+      }
+
+      function toggleCart() {
+        const cartSection = document.getElementById("cart");
+        cartSection.style.display =
+          cartSection.style.display === "none" ? "block" : "none";
+      }
+
+      async function checkout() {
+        const customerNotes = document.getElementById("customerNotes").value;
+        // cart['customerNotes'] = customerNotes
+        console.log(cart);
+
+        const combinedData = {
+          data: cart,
+          notes: customerNotes,
+        };
+        console.log(combinedData);
+
+        try {
+          console.log("customer notes", customerNotes);
+          const response = await fetch("/submit_order", {
+            method: "POST",
+            body: JSON.stringify(combinedData),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
+          if (response.ok) {
+            alert("Order placed successfully!");
+            for (const productId in cart) {
+              delete cart[productId];
+            }
+            updateCartDisplay();
+          } else {
+            alert("Order failed. Please try again.");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert(
+            "An error occurred while placing the order. Please try again later."
+          );
+        }
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var popupButtons = document.getElementsByClassName("openPopup");
+        var popups = document.getElementsByClassName("popup");
+
+        // Add event listeners to all popup buttons
+        for (var i = 0; i < popupButtons.length; i++) {
+          popupButtons[i].addEventListener("click", function () {
+            var target = this.getAttribute("data-target");
+            document.getElementById(target).style.display = "block";
+          });
+        }
+
+        // Add event listeners to all close buttons within popups
+        var closeButtons = document.getElementsByClassName("close");
+        for (var j = 0; j < closeButtons.length; j++) {
+          closeButtons[j].addEventListener("click", function () {
+            this.parentNode.parentNode.style.display = "none";
+          });
+        }
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/your-kit-code.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
