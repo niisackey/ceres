@@ -15,9 +15,17 @@
     />
     <link rel="stylesheet" href="{{ url_for("static", filename="css/cart.css"
     )}}">
+   
     <title>Shopping Cart</title>
   </head>
   <body>
+
+    <ssection class="banner">
+      <div class="bancontent">
+        <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
+      </div>
+    </ssection>
+    
     <section class="sizes">
       <h1>Featured Sizes</h1>
       
@@ -91,7 +99,7 @@
     </section>
 
     <section class="flavours">
-      <h1>Flavours</h1>
+      <h1>Flavours</h1><br><br>
 
       <div class="flavoursrow">
         <div class="flavor">
@@ -101,7 +109,7 @@
           </div>
           <div class="content">
             <h3>Cocktail</h3>
-            <p>The Best Flavour Yet</p>
+            <p>Savour the perfect blend of juice</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -112,17 +120,18 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <option value="pinegin">pine</option>
+        <div class="flavor1">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img2.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
-            <h3>Pinegin bliss</h3>
-            <p>The Best Flavour Yet</p>
+            <h3>Pinegin <span>bliss</span></h3>
+            <p>Blend of tropical zest and warmth</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -133,17 +142,17 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor2">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>Citrus Wave</h3>
-            <p>The Best Flavour Yet</p>
+            <p>A thirst-quenching concoction</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -154,17 +163,17 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor3">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>TropiFusion</h3>
-            <p>The Best Flavour Yet</p>
+            <p>delivering a burst of tropical delight</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -175,17 +184,17 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor4">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>WaterPine Delight</h3>
-            <p>The Best Flavour Yet</p>
+            <p>A Slice of paradise in a glass</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -196,17 +205,18 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor5">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
-            <h3>Crimson Carrot Burst</h3>
-            <p>The Best Flavour Yet</p>
+            <h3>Crimson Carrot</h3>
+            <p>Harmonious blend of root vegetables</p>
+            
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -217,17 +227,17 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor6">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>Banapple Burst</h3>
-            <p>The Best Flavour Yet</p>
+            <p>A Smooth and Creamy Blend of Ffruits</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -238,18 +248,18 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor7">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>Beetro-Pine</h3>
-            <p>The Best Flavour Yet</p>
+            <p>A healthy dose of nutrients and flavor.</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -260,17 +270,17 @@
            ></i></button>
            </div>
         </div>
-      </div>
+      </div><br>
 
       <div class="flavoursrow">
-        <div class="flavor">
+        <div class="flavor8">
           <div class="pic">
             <img src={{ url_for("static", filename="images/img1.png" )}} alt=""
             class="starbucks">
           </div>
           <div class="content">
             <h3>Tropical Nutwave</h3>
-            <p>The Best Flavour Yet</p>
+            <p>A true celebration of natures bounty.</p>
             <h3>GHC 200</h3>
           </div>
           <div class="outliner">
@@ -381,6 +391,8 @@
           <button onclick="addToCart(1, 'size1', 'quantity1')">
             Add to Cart
           </button>
+          
+
         </div>
       </div>
     </div>
@@ -411,11 +423,7 @@
           <div class="overlay1"><br>
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Indulge in a tropical paradise with our Pinegin Bliss. This refreshing elixir combines the sweet, sun-kissed essence of ripe pineapples with the invigorating warmth of ginger. Each sip is a harmonious blend of tropical zest and spicy sophistication, making it the perfect companion for a sunny day or a revitalizing pick-me-up anytime. Quench your thirst and tantalize your taste buds with this exquisite fusion of flavors.
             </p>
             <br />
             <div class="ing">
@@ -482,14 +490,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay2">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Savor the bright and juicy fusion of pineapples and oranges in our irresistible Citrus Wave. This thirst-quenching concoction captures the essence of sun-kissed fruits, delivering a burst of tropical sweetness complemented by the tangy zest of citrus. Every sip is a delightful journey to a tropical oasis, making it the perfect choice to elevate your day with a taste of paradise. Enjoy the harmonious blend of these two beloved fruits in a single glass, and let the flavors dance on your palate.
             </p>
             <br />
             <div class="ing">
@@ -562,14 +566,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay3">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Treat your taste buds to a tantalizing escape with our TropiFusion. This delightful concoction marries the luscious sweetness of ripe mangoes with the tropical vibrancy of pineapples, creating a symphony of flavors that's as refreshing as a summer breeze. With each sip, you'll be transported to a sun-drenched paradise, where the essence of these two fruits harmonizes perfectly, delivering a burst of tropical delight. Raise your glass to this tropical treasure and let the exotic blend of pineapple and mango brighten your day.
             </p>
             <br />
             <div class="ing">
@@ -626,7 +626,7 @@
           <div class="header">
             <div class="star"></div>
             <div class="headtext">
-              <h3>WaterPine Delight</h3>
+              <h3>WaterPine <span>Delight</span></h3>
   
               <h3>GHC 6</h3>
               <span>
@@ -642,14 +642,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay4">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Dive into a refreshing oasis with our WaterPine Delight. This invigorating blend combines the tropical sweetness of pineapples with the crisp, hydrating essence of watermelons. Every sip is a burst of summer, delivering the perfect balance of fruity indulgence and thirst-quenching satisfaction. Whether you're lounging by the pool or enjoying a sunny afternoon, this drink is a slice of paradise in a glass. Embrace the tropical synergy of pineapple and watermelon, and let the pure, natural flavors transport you to a state of pure relaxation.
             </p>
             <br />
             <div class="ing">
@@ -722,14 +718,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay5">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Experience the earthy elegance of our Crimson Carrot Burst. This vibrant fusion of nutrient-packed beetroot and sweet, vitamin-rich carrots is a celebration of wholesome goodness. With every sip, you'll encounter the harmonious blend of these root vegetables, resulting in a drink that's as invigorating as it is revitalizing. Indulge in this natural masterpiece, packed with antioxidants and flavor, and let the vibrant hues and delicious taste elevate your well-being with every refreshing gulp.
             </p>
             <br />
             <div class="ing">
@@ -802,14 +794,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay6">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Delight in the simple yet enchanting combination of our Banapple Burst. This smooth and creamy blend marries the sweet, buttery notes of ripe bananas with the crisp and refreshing essence of apples. Each sip is a nostalgic journey through orchards and tropical groves, offering a harmonious balance of flavors that's both comforting and invigorating. Served chilled, it's the perfect way to start your day or satisfy your sweet cravings while staying refreshingly wholesome. Raise your glass to the classic pairing of banana and apple, and let their natural charm captivate your taste buds.
             </p>
             <br />
             <div class="ing">
@@ -882,14 +870,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay7">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Experience an unexpected burst of flavors with our Beetroot Pineapple Fusion. This intriguing blend combines the earthy richness of beetroot with the tropical sweetness of pineapple, resulting in a drink that's as vibrant as it is refreshing. With every sip, you'll embark on a culinary adventure that balances the bold, robust essence of beets with the sunny, tangy allure of pineapples. Enjoy the unique pairing of these ingredients in a single glass, and let the harmonious contrast awaken your palate while providing a healthy dose of nutrients and flavor.
             </p>
             <br />
             <div class="ing">
@@ -962,14 +946,10 @@
             class="starbucks">
           </div>
   
-          <div class="overlay">
+          <div class="overlay8">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              alias modi eos recusandae rem delectus sed similique repudiandae
-              a,<br />
-              id facilis ipsam numquam, quos, in atque fuga error <br />
-              earum illum.
+              Indulge in a taste of tropical paradise with our Tropical Nutwave. This exotic blend unites the nutty creaminess of tigernuts with the natural sweetness of dates and the rich, tropical essence of coconut. Each sip is a harmonious symphony of flavors, offering a delightful fusion of textures and tastes. With the earthy undertones of tigernuts, the caramel-like sweetness of dates, and the creamy coconut goodness, this drink is a true celebration of nature's bounty. Whether as a refreshing treat or a nutritious pick-me-up, it's a sip of pure delight that transports your senses to sun-drenched shores. Cheers to the enchanting trio of tigernuts, dates, and coconut!
             </p>
             <br />
             <div class="ing">
@@ -1226,5 +1206,42 @@
       src="https://kit.fontawesome.com/your-kit-code.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+        // Get references to HTML elements
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+const flavoursSection = document.querySelector(".flavours");
+
+// Function to filter and display items based on the search query
+function performSearch(query) {
+    query = query.toLowerCase();
+    const flavourItems = flavoursSection.querySelectorAll(".flavoursrow");
+
+    flavourItems.forEach(item => {
+        const flavourName = item.querySelector("h3").textContent.toLowerCase();
+        if (flavourName.includes(query)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+// Event listener for the search button
+searchButton.addEventListener("click", () => {
+    const query = searchInput.value;
+    performSearch(query);
+});
+
+// Event listener for the input field (to perform search on Enter key press)
+searchInput.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        const query = searchInput.value;
+        performSearch(query);
+    }
+});
+
+    </script>
   </body>
 </html>

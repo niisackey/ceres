@@ -267,6 +267,10 @@ button {
   }
 
   @media (max-width:768px){
+    .imgbox img{
+        width: 380px;
+
+    }
     body{
         scroll-behavior: smooth;
     }
